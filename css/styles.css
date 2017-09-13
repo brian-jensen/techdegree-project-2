@@ -8,16 +8,17 @@ GENERAL PRESETS
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fafafa;
+  background-image: url("../images/crossword.png");
   margin: 0;
 }
 
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
-header, aside {
+header, .about {
   margin: 0 15px 40px;
 }
 
@@ -32,6 +33,19 @@ li {
 
 ul {
   padding: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -55,7 +69,6 @@ nav a {
 }
 
 nav ul {
-  padding: 0;
   text-align: center;
 }
 
@@ -73,51 +86,129 @@ nav li {
 ABOUT
 ***********************************/
 
-aside {
+.about {
   text-align: center;
   color: #7f7f7f;
   font-weight: 300;
 }
 
-aside img {
+.about img {
   max-width: 70%;
 }
 
 
 /**********************************
-MAIN CONTENT
+PORTFOLIO
 ***********************************/
 
-main {
+#portfolio {
   background-color: #fff;
-  padding: 30px 15px 0;
+  padding: 30px 15px 40px;
   text-align: center;
-  color: #7f7f7f;
+  color: #4a4a4a;
 }
 
-main h4 {
-  text-transform: uppercase;
-  font-size: 14px;
+#portfolio h4 {
   padding-bottom: 15px;
 }
 
-section {
+#portfolio section {
   text-transform: none;
   font-weight: 300;
 }
 
-section img {
+#portfolio section img {
   max-width: 100%;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
-section h2 {
+#portfolio section h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 110%;
 }
 
-section p {
+#portfolio section p {
   font-size: 16px;
+}
+
+
+/**********************************
+SKILLS
+***********************************/
+
+#skills {
+  padding: 30px 15px;
+}
+
+#skills h4 {
+  margin-bottom: 30px;
+}
+
+#skills ul {
+  text-align: center;
+}
+
+
+/**********************************
+CONTACT
+***********************************/
+
+#contact {
+  text-align: center;
+  color: #7f7f7f;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 40px 15px;
+}
+
+#contact h4 {
+  margin-bottom: 30px;
+}
+
+.top {
+  padding-top: 15px;
+}
+
+#contact div {
+  margin: 15px 0;
+}
+
+#contact span {
+  margin-right: 15px;
+}
+
+#contact a {
+  color: #7f7f7f;
+  font-weight: 600;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  color: #4a4a4a;
+  font-weight: 700;
+  padding: 5px 15px 15px;
+  background-color: #fff;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+footer a {
+  float: right;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+footer p {
+  float: left;
+  font-size: 14px;
 }
