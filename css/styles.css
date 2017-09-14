@@ -237,17 +237,39 @@ MEDIA QUERIES
   .about {
     display: flex;
     padding: 0 15px;
+    margin-bottom: 75px;
+    margin-top: 60px;
   }
   .about p {
-    flex: 1.5;
+    flex: 1.2;
     order: 1;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0;
   }
   .about img {
     flex: 1;
     order: 2;
     margin-left: 10px;
+  }
+  #portfolio {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #portfolio li {
+    flex-basis: 49%;
+  }
+  #portfolio section p {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  #contact {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
