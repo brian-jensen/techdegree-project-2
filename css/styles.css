@@ -144,6 +144,32 @@ SKILLS
   text-align: center;
 }
 
+#skills li {
+  line-height: 150%;
+}
+
+#skills li:nth-child(1) {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  color: #a37854;
+}
+
+#skills li:nth-child(2) {
+  font-family: 'Knewave', cursive;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: tomato;
+}
+
+#skills li:nth-child(3) {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px #9bc2cf;
+  padding-top: 5px;
+  color: #add8e6;
+}
+
 
 /**********************************
 CONTACT
@@ -268,8 +294,20 @@ MEDIA QUERIES
     padding-left: 8%;
     padding-right: 8%;
   }
+  #skills li:nth-child(1) {
+    font-size: 26px;
+  }
+  #skills li:nth-child(2) {
+    font-size: 18px;
+  }
+  #skills li:nth-child(3) {
+    font-size: 22px;
+  }
   #contact {
     padding-left: 20%;
     padding-right: 20%;
+  }
+  footer {
+    padding: 0 30px;
   }
 }
