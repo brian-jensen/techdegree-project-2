@@ -192,23 +192,35 @@ FOOTER
 footer {
   color: #4a4a4a;
   font-weight: 700;
-  padding: 5px 15px 15px;
+  padding: 0 15px;
   background-color: #fff;
 }
 
 footer hr {
   border: 0;
+  margin: 0;
   border-top: 1px solid #e7e7e7;
 }
 
+footer div {
+  display: flex;
+}
+
+footer ul {
+  flex: 1;
+}
+
+footer li {
+  text-align: right;
+}
+
 footer a {
-  float: right;
   text-transform: uppercase;
-  margin-top: 1rem;
   font-size: 12px;
 }
 
 footer p {
-  float: left;
+  flex: 1;
+  margin: auto;
   font-size: 14px;
 }
