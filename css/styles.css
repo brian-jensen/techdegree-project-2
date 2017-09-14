@@ -226,12 +226,12 @@ footer div {
   display: flex;
 }
 
-footer ul {
-  flex: 1;
+footer li:nth-child(1) {
+  display: inline-flex;
 }
 
-footer li {
-  text-align: right;
+footer li:nth-child(n+2) {
+  display: none;
 }
 
 footer a {
@@ -309,5 +309,13 @@ MEDIA QUERIES
   }
   footer {
     padding: 0 30px;
+  }
+  footer li:nth-child(1) {
+    display: none;
+  }
+  footer li:nth-child(n+2) {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 30px;
   }
 }
