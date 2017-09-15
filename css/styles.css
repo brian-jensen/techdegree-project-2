@@ -58,21 +58,27 @@ header h1 {
   padding-bottom: 5px;
 }
 
-nav a {
-  text-transform: uppercase;
-}
-
 nav ul {
   text-align: center;
 }
 
 nav li {
   display: block;
-  background-color: #fff;
   margin: 5px 0;
   font-size: 14px;
   line-height: 275%;
   font-weight: bold;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgb(109, 189, 110);
+}
+
+nav a:hover {
+  background-color: rgba(109, 189, 110, 0.5);
 }
 
 
@@ -239,6 +245,10 @@ footer a {
   font-size: 12px;
 }
 
+footer a:hover {
+  color: #f78460;
+}
+
 footer p {
   flex: 1;
   margin: auto;
@@ -253,8 +263,15 @@ MEDIA QUERIES
 @media (min-width: 768px) and (max-width: 1023px) {
   nav li {
     display: inline-block;
-    background: none;
     padding: 0 15px;
+  }
+  nav a {
+    background: none;
+    color: #4a4a4a;
+  }
+  nav a:hover {
+    background: none;
+    color: #f78460;
   }
   header h1 {
     padding: 0;
