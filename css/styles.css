@@ -336,3 +336,53 @@ MEDIA QUERIES
     padding-left: 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .logo {
+    flex: 1;
+    margin: auto;
+  }
+  header h1 {
+    text-align: left;
+    line-height: 150%;
+  }
+  header ul {
+    margin: auto;
+  }
+  header li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+  nav a {
+    background: none;
+    color: #4a4a4a;
+  }
+  nav a:hover {
+    background: none;
+    color: #f78460;
+  }
+  .about {
+    display: flex;
+    padding: 0 45px;
+    margin-bottom: 75px;
+    margin-top: 60px;
+  }
+  .about p {
+    flex: 1.2;
+    order: 1;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .about img {
+    flex: 1;
+    order: 2;
+    margin-left: 10px;
+  }
+}
