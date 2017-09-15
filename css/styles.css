@@ -55,7 +55,7 @@ header h1 {
   font-size: 26px;
   margin-top: 0;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 nav ul {
@@ -261,6 +261,13 @@ MEDIA QUERIES
 ***********************************/
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    line-height: 150%;
+  }
+  header h1 {
+    padding: 0;
+    margin-top: 30px;
+  }
   nav li {
     display: inline-block;
     padding: 0 15px;
@@ -273,10 +280,6 @@ MEDIA QUERIES
     background: none;
     color: #f78460;
   }
-  header h1 {
-    padding: 0;
-    margin-top: 30px;
-  }
   .about {
     display: flex;
     padding: 0 15px;
@@ -284,16 +287,16 @@ MEDIA QUERIES
     margin-top: 60px;
   }
   .about p {
-    flex: 1.2;
+    flex: 1.5;
     order: 1;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 0;
   }
   .about img {
     flex: 1;
     order: 2;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   #portfolio {
     padding-left: 30px;
@@ -321,8 +324,9 @@ MEDIA QUERIES
     font-size: 22px;
   }
   #contact {
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: 20px;
+    padding: 45px 15%;
+    line-height: 170%;
   }
   footer {
     padding: 0 30px;
@@ -340,7 +344,7 @@ MEDIA QUERIES
 @media (min-width: 1024px) {
   header {
     display: flex;
-    padding: 55px 45px 0;
+    padding: 45px 45px 0;
   }
   .logo {
     flex: 1;
@@ -373,16 +377,16 @@ MEDIA QUERIES
     margin-top: 60px;
   }
   .about p {
-    flex: 1.2;
+    flex: 1.4;
     order: 1;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 0;
+    padding-right: 30px
   }
   .about img {
     flex: 1;
     order: 2;
-    margin-left: 10px;
   }
   #portfolio {
     margin-left: 30px;
@@ -413,6 +417,7 @@ MEDIA QUERIES
     font-size: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    line-height: 160%;
   }
   footer {
     padding: 0 60px;
