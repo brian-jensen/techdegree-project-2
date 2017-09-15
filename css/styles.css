@@ -257,7 +257,7 @@ footer p {
 
 
 /**********************************
-MEDIA QUERIES
+TABLET MEDIA QUERIES
 ***********************************/
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -340,6 +340,11 @@ MEDIA QUERIES
     padding-left: 30px;
   }
 }
+
+
+/**********************************
+DESKTOP MEDIA QUERIES
+***********************************/
 
 @media (min-width: 1024px) {
   header {
